@@ -17,6 +17,12 @@
 		222B2F4C2538F4B400C4DDBF /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222B2F332538F4B300C4DDBF /* Persistence.swift */; };
 		222B2F4D2538F4B400C4DDBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222B2F342538F4B400C4DDBF /* Assets.xcassets */; };
 		222B2F4E2538F4B400C4DDBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222B2F342538F4B400C4DDBF /* Assets.xcassets */; };
+		22F41FE9253A511F00DDC531 /* Show+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F41FE7253A511F00DDC531 /* Show+CoreDataClass.swift */; };
+		22F41FEA253A511F00DDC531 /* Show+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F41FE7253A511F00DDC531 /* Show+CoreDataClass.swift */; };
+		22F41FEB253A511F00DDC531 /* Show+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F41FE8253A511F00DDC531 /* Show+CoreDataProperties.swift */; };
+		22F41FEC253A511F00DDC531 /* Show+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F41FE8253A511F00DDC531 /* Show+CoreDataProperties.swift */; };
+		22F41FF4253B7FE000DDC531 /* ShowSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F41FF3253B7FE000DDC531 /* ShowSheet.swift */; };
+		22F41FF5253B7FE000DDC531 /* ShowSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F41FF3253B7FE000DDC531 /* ShowSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +36,9 @@
 		222B2F412538F4B400C4DDBF /* Showfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Showfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		222B2F432538F4B400C4DDBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		222B2F442538F4B400C4DDBF /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		22F41FE7253A511F00DDC531 /* Show+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Show+CoreDataClass.swift"; sourceTree = "<group>"; };
+		22F41FE8253A511F00DDC531 /* Show+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Show+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		22F41FF3253B7FE000DDC531 /* ShowSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSheet.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +62,8 @@
 		222B2F292538F4B200C4DDBF = {
 			isa = PBXGroup;
 			children = (
+				22F41FE7253A511F00DDC531 /* Show+CoreDataClass.swift */,
+				22F41FE8253A511F00DDC531 /* Show+CoreDataProperties.swift */,
 				222B2F2E2538F4B200C4DDBF /* Shared */,
 				222B2F3B2538F4B400C4DDBF /* iOS */,
 				222B2F422538F4B400C4DDBF /* macOS */,
@@ -68,6 +79,7 @@
 				222B2F332538F4B300C4DDBF /* Persistence.swift */,
 				222B2F342538F4B400C4DDBF /* Assets.xcassets */,
 				222B2F2F2538F4B300C4DDBF /* Showfer.xcdatamodeld */,
+				22F41FF3253B7FE000DDC531 /* ShowSheet.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -198,7 +210,10 @@
 				222B2F472538F4B400C4DDBF /* ShowferApp.swift in Sources */,
 				222B2F4B2538F4B400C4DDBF /* Persistence.swift in Sources */,
 				222B2F452538F4B400C4DDBF /* Showfer.xcdatamodeld in Sources */,
+				22F41FE9253A511F00DDC531 /* Show+CoreDataClass.swift in Sources */,
+				22F41FEB253A511F00DDC531 /* Show+CoreDataProperties.swift in Sources */,
 				222B2F492538F4B400C4DDBF /* ContentView.swift in Sources */,
+				22F41FF4253B7FE000DDC531 /* ShowSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +224,10 @@
 				222B2F482538F4B400C4DDBF /* ShowferApp.swift in Sources */,
 				222B2F4C2538F4B400C4DDBF /* Persistence.swift in Sources */,
 				222B2F462538F4B400C4DDBF /* Showfer.xcdatamodeld in Sources */,
+				22F41FEA253A511F00DDC531 /* Show+CoreDataClass.swift in Sources */,
+				22F41FEC253A511F00DDC531 /* Show+CoreDataProperties.swift in Sources */,
 				222B2F4A2538F4B400C4DDBF /* ContentView.swift in Sources */,
+				22F41FF5253B7FE000DDC531 /* ShowSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
