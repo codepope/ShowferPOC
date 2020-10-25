@@ -36,9 +36,14 @@ extension Show : Identifiable {
 
 }
 
-enum Platform: String, CaseIterable {
+enum Platform: String, Equatable, CaseIterable {
     case Other = "Other"
     case Netflix = "Netflix"
     case Amazon = "Amazon"
     case Sky = "Sky"
+    
+    var name: String {
+           return "\(self)".map {
+               $0.isUppercase ? " \($0)" : "\($0)" }.joined().capitalized
+       }
 }

@@ -16,6 +16,9 @@ struct PersistenceController {
         for _ in 0..<10 {
             let newShow = Show(context: viewContext)
             newShow.name="Warrior"
+            newShow.platform=Platform.Sky.name
+            newShow.season=1
+            newShow.episode=1
             newShow.id=UUID()
         }
         do {

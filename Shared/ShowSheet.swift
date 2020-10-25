@@ -9,35 +9,60 @@ import Foundation
 import SwiftUI
 
 struct ShowSheet: View {
-    @State var platformIndex=Platform.Other
+    @Environment(\.managedObjectContext) private var viewContext
+    @Environment (\.presentationMode) var presentationMode
+
+    @State var platformSelection=Platform.Other
     @State var seriesName=""
-    @State var season:Int=0
-    @State var episodeNum=0
+    @State var season:Int16=0
+    @State var episodeNum:Int16=0
     
     
     var body: some View {
         NavigationView {
             Form {
-                Section(header:Text("Show")) {
-Picker(selection:$platformIndex,Text("Platform"))
-                   {
-                                            ForEach(0..<Platform.allCases.count) {
-                                                Text(String(describing: Platform.allCases[$0])).tag($0)
-                                            }
-                                       }
+                Section( header: Text("Show") ) {
+                    Group {
                     TextField("Name",text: $seriesName)
-                    Stepper("Season \(season)", value: $season, in: 1...20)
+                    
+                        Picker("Platform",selection:$platformSelection) {
+                            ForEach(Platform.allCases, id:\.self) { v in Text(v.name).tag(v) }
+                    }
+                    Stepper( value: $season, in: 1...20, step:1) {
+                        Text("Season \(season)")
+                    }
+                    }
                 }
+
                 Section(header:Text("Watched")) {
                     Stepper("Episode \(episodeNum)",value:$episodeNum, in:1...99)
                 }
                 Button(action: {
-                    print("Save the show!")
+                    guard self.seriesName != "" else { return }
+                    let newShow=Show(context: viewContext)
+                    newShow.name=self.seriesName
+                    newShow.platform=self.platformSelection.name
+                    newShow.season=self.season
+                    newShow.episode=self.episodeNum
+                    newShow.id=UUID()
+                    do {
+                           try viewContext.save()
+                           print("Show saved.")
+                            presentationMode.wrappedValue.dismiss()
+                       } catch {
+                           print(error.localizedDescription)
+                       }
                 }) {
                     Text("Add Show")
                 }
             }.navigationTitle("Add A Show")
         }
+    }
+}
+
+struct ShowSheet_Previews: PreviewProvider {
+    static var previews: some View {
+        ShowSheet().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
 
