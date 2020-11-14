@@ -19,6 +19,7 @@ struct PersistenceController {
             newShow.platform=Platform.Sky.name
             newShow.season=1
             newShow.episode=1
+            newShow.seasonEps=10
             newShow.id=UUID()
         }
         do {

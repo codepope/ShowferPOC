@@ -1,8 +1,8 @@
 //
 //  Show+CoreDataClass.swift
-//  Showfer
+//  Showfer (iOS)
 //
-//  Created by Dj Walker-Morgan on 16/10/2020.
+//  Created by Dj Walker-Morgan on 09/11/2020.
 //
 //
 

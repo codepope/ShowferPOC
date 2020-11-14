@@ -21,15 +21,25 @@ struct ContentView: View {
                         }
                         Spacer()
                         Button(action: {print("Watched")}) {
-                            Text("Watch") }
-                        
+                            Image(systemName: "eye.circle")
+                                .imageScale(.large)}
                     }.frame(height:50)
+                }.onDelete { indexSet in
+                    for index in indexSet {
+                        viewContext.delete(shows[index])
+                    }
+                    do {
+                        try viewContext.save()
+                    } catch {
+                        print(error.localizedDescription)
+                    }
                 }
             }.listStyle(PlainListStyle())
             .navigationTitle("My Shows")
             .sheet(isPresented: $showShowSheet) {
                 ShowSheet()
-            }
+            }.navigationBarItems(leading: EditButton())
+
             .navigationBarItems(trailing: Button(action: {
                 showShowSheet=true
             }, label: {

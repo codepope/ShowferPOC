@@ -17,15 +17,16 @@
 		222B2F4C2538F4B400C4DDBF /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222B2F332538F4B300C4DDBF /* Persistence.swift */; };
 		222B2F4D2538F4B400C4DDBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222B2F342538F4B400C4DDBF /* Assets.xcassets */; };
 		222B2F4E2538F4B400C4DDBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222B2F342538F4B400C4DDBF /* Assets.xcassets */; };
-		22F41FE9253A511F00DDC531 /* Show+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F41FE7253A511F00DDC531 /* Show+CoreDataClass.swift */; };
-		22F41FEA253A511F00DDC531 /* Show+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F41FE7253A511F00DDC531 /* Show+CoreDataClass.swift */; };
-		22F41FEB253A511F00DDC531 /* Show+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F41FE8253A511F00DDC531 /* Show+CoreDataProperties.swift */; };
-		22F41FEC253A511F00DDC531 /* Show+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F41FE8253A511F00DDC531 /* Show+CoreDataProperties.swift */; };
+		227F8FD52558AF870060975F /* Show+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227F8FD32558AF870060975F /* Show+CoreDataProperties.swift */; };
+		227F8FDB2559E4450060975F /* Show+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227F8FDA2559E4450060975F /* Show+CoreDataClass.swift */; };
+		22F41FEB253A511F00DDC531 /* savedold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F41FE8253A511F00DDC531 /* savedold.swift */; };
+		22F41FEC253A511F00DDC531 /* savedold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F41FE8253A511F00DDC531 /* savedold.swift */; };
 		22F41FF4253B7FE000DDC531 /* ShowSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F41FF3253B7FE000DDC531 /* ShowSheet.swift */; };
 		22F41FF5253B7FE000DDC531 /* ShowSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F41FF3253B7FE000DDC531 /* ShowSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2218B79125458EB5001279B5 /* Showfer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Showfer.entitlements; sourceTree = "<group>"; };
 		222B2F302538F4B300C4DDBF /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		222B2F312538F4B300C4DDBF /* ShowferApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowferApp.swift; sourceTree = "<group>"; };
 		222B2F322538F4B300C4DDBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,8 +37,9 @@
 		222B2F412538F4B400C4DDBF /* Showfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Showfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		222B2F432538F4B400C4DDBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		222B2F442538F4B400C4DDBF /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		22F41FE7253A511F00DDC531 /* Show+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Show+CoreDataClass.swift"; sourceTree = "<group>"; };
-		22F41FE8253A511F00DDC531 /* Show+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Show+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		227F8FD32558AF870060975F /* Show+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Show+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		227F8FDA2559E4450060975F /* Show+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Show+CoreDataClass.swift"; sourceTree = "<group>"; };
+		22F41FE8253A511F00DDC531 /* savedold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = savedold.swift; sourceTree = "<group>"; };
 		22F41FF3253B7FE000DDC531 /* ShowSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSheet.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -62,8 +64,10 @@
 		222B2F292538F4B200C4DDBF = {
 			isa = PBXGroup;
 			children = (
-				22F41FE7253A511F00DDC531 /* Show+CoreDataClass.swift */,
-				22F41FE8253A511F00DDC531 /* Show+CoreDataProperties.swift */,
+				227F8FDA2559E4450060975F /* Show+CoreDataClass.swift */,
+				227F8FD32558AF870060975F /* Show+CoreDataProperties.swift */,
+				2218B79125458EB5001279B5 /* Showfer.entitlements */,
+				22F41FE8253A511F00DDC531 /* savedold.swift */,
 				222B2F2E2538F4B200C4DDBF /* Shared */,
 				222B2F3B2538F4B400C4DDBF /* iOS */,
 				222B2F422538F4B400C4DDBF /* macOS */,
@@ -74,12 +78,6 @@
 		222B2F2E2538F4B200C4DDBF /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				222B2F312538F4B300C4DDBF /* ShowferApp.swift */,
-				222B2F322538F4B300C4DDBF /* ContentView.swift */,
-				222B2F332538F4B300C4DDBF /* Persistence.swift */,
-				222B2F342538F4B400C4DDBF /* Assets.xcassets */,
-				222B2F2F2538F4B300C4DDBF /* Showfer.xcdatamodeld */,
-				22F41FF3253B7FE000DDC531 /* ShowSheet.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -96,6 +94,12 @@
 		222B2F3B2538F4B400C4DDBF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				222B2F312538F4B300C4DDBF /* ShowferApp.swift */,
+				222B2F322538F4B300C4DDBF /* ContentView.swift */,
+				222B2F332538F4B300C4DDBF /* Persistence.swift */,
+				222B2F342538F4B400C4DDBF /* Assets.xcassets */,
+				222B2F2F2538F4B300C4DDBF /* Showfer.xcdatamodeld */,
+				22F41FF3253B7FE000DDC531 /* ShowSheet.swift */,
 				222B2F3C2538F4B400C4DDBF /* Info.plist */,
 			);
 			path = iOS;
@@ -207,11 +211,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				227F8FDB2559E4450060975F /* Show+CoreDataClass.swift in Sources */,
 				222B2F472538F4B400C4DDBF /* ShowferApp.swift in Sources */,
 				222B2F4B2538F4B400C4DDBF /* Persistence.swift in Sources */,
 				222B2F452538F4B400C4DDBF /* Showfer.xcdatamodeld in Sources */,
-				22F41FE9253A511F00DDC531 /* Show+CoreDataClass.swift in Sources */,
-				22F41FEB253A511F00DDC531 /* Show+CoreDataProperties.swift in Sources */,
+				227F8FD52558AF870060975F /* Show+CoreDataProperties.swift in Sources */,
+				22F41FEB253A511F00DDC531 /* savedold.swift in Sources */,
 				222B2F492538F4B400C4DDBF /* ContentView.swift in Sources */,
 				22F41FF4253B7FE000DDC531 /* ShowSheet.swift in Sources */,
 			);
@@ -224,8 +229,7 @@
 				222B2F482538F4B400C4DDBF /* ShowferApp.swift in Sources */,
 				222B2F4C2538F4B400C4DDBF /* Persistence.swift in Sources */,
 				222B2F462538F4B400C4DDBF /* Showfer.xcdatamodeld in Sources */,
-				22F41FEA253A511F00DDC531 /* Show+CoreDataClass.swift in Sources */,
-				22F41FEC253A511F00DDC531 /* Show+CoreDataProperties.swift in Sources */,
+				22F41FEC253A511F00DDC531 /* savedold.swift in Sources */,
 				222B2F4A2538F4B400C4DDBF /* ContentView.swift in Sources */,
 				22F41FF5253B7FE000DDC531 /* ShowSheet.swift in Sources */,
 			);
@@ -352,6 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Showfer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X8L85P2GXC;
 				ENABLE_PREVIEWS = YES;
@@ -364,6 +369,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepope.Showfer;
 				PRODUCT_NAME = Showfer;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -374,6 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Showfer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X8L85P2GXC;
 				ENABLE_PREVIEWS = YES;
@@ -386,6 +393,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepope.Showfer;
 				PRODUCT_NAME = Showfer;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
